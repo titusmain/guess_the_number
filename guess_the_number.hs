@@ -1,3 +1,5 @@
+import System.Random
+
 main :: IO ()
 
 main = do
@@ -7,7 +9,7 @@ main = do
     putStrLn "Please enter a number:"
 
     -- This generates a random number.
-    let randomNumber = 2
+    randomNumber <- randomRIO(1,10)
 
     -- This allows the user to write a number into the console.
     input <- getLine
@@ -17,5 +19,9 @@ main = do
     putStrLn $ "You entered: " ++ show guessnumber
 
     -- This evaluates whether the number is right or wrong.
-    putStrLn $ "Wrong number."
-    putStrLn $ "Right number."
+    if guessnumber == randomNumber
+        then 
+            putStrLn $ "Right number."
+        else do
+            putStrLn $ "Wrong number."
+            putStrLn $ "The number was" ++ show (randomNumber)
