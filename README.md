@@ -1,6 +1,6 @@
 # Guess The Number
 
-A game about guessing a number.
+A game about guessing a number between one and ten.
 
 ## Dependencies
 
