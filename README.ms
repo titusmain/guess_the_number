@@ -2,9 +2,9 @@
 
 Game about guessing a number.
 
-##Dependencies
-### System.Random
+# Dependencies
 This project requires the System.Random package.
-```
+
+```bash
 cabal install random --lib
 ```
