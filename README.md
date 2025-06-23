@@ -1,10 +1,10 @@
 # Guess The Number
 
-Game about guessing a number.
+A game about guessing a number.
 
-# Dependencies
-This project requires the System.Random package.
+## Dependencies
+
+To install the dependencies, run:
 
 ```bash
 cabal install random --lib
-```
