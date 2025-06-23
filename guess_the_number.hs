@@ -21,7 +21,7 @@ main = do
     -- This evaluates whether the number is right or wrong.
     if guessnumber == randomNumber
         then 
-            putStrLn $ "Right number."
+            putStrLn "Right number."
         else do
-            putStrLn $ "Wrong number."
-            putStrLn $ "The number was" ++ show (randomNumber)
+            putStrLn "Wrong number."
+            putStrLn "The number was" ++ show (randomNumber)
